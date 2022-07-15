@@ -1,0 +1,177 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+attribution .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0px;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/*---------------------------------------*/
+:root {
+    --size: 2rem;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+}
+
+.product-infos {
+    padding: var(--size);
+
+}
+
+.desktop-image {
+    width: 17rem;
+    border-radius: 0.5rem;
+}
+
+.mobile-image {
+    display: none;
+}
+
+h6 {
+    margin-top: 0px;
+    margin-bottom: 13px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    margin: 0px;
+    width: 16rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.discription {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+    width: 15rem;
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.prices {
+    display: flex;
+    font-family: 'Fraunces', serif;
+
+
+}
+
+.discount {
+    margin-top: 15px;
+    margin-right: var(--size);
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.no-discount {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    padding: 13px 70px;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: hsl(159, 65%, 17%);
+}
+
+button img {
+    margin-right: 8px;
+    width: 15px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+}
+
+@media(max-width: 605px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 340px;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        width: 340px;
+        border-radius: 8px;
+        margin-bottom: 0px;
+    }
+
+    .product-infos {
+        padding: 20px;
+        width: 340px;
+    }
+
+    .title {
+        display: block;
+        width: 300px;
+    }
+
+    .discription {
+        margin-top: 14px;
+        width: 20rem;
+    }
+
+    .prices {
+        margin-top: 20px;
+    }
+
+    .discount {
+        margin-bottom: 15px;
+    }
+
+    .no-discount {
+        margin-top: 25px;
+    }
+
+    button {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
