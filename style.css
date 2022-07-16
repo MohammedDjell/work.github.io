@@ -118,14 +118,17 @@ button img {
 @media(max-width: 605px) {
 
     body {
-        margin: 0;
-        padding: 0;
+        height: 100%;
+        width: 100%;
+        padding-top: 25px;
         overflow: hidden;
     }
 
     .container {
         flex-direction: column;
         width: 340px;
+        margin-bottom: 50px;
+
     }
 
     .desktop-image {
@@ -141,7 +144,8 @@ button img {
 
     .product-infos {
         padding: 20px;
-        width: 340px;
+        padding-right: 0px;
+        width: 100%;
     }
 
     .title {
@@ -172,6 +176,6 @@ button img {
     }
 
     .attribution {
-        display: none;
+        bottom: 25px;
     }
 }
