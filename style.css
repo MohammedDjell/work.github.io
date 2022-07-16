@@ -176,6 +176,7 @@ button img {
     }
 
     .attribution {
+        position: relative;
         bottom: 25px;
     }
 }
